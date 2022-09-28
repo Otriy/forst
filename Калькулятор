@@ -1,0 +1,20 @@
+z = input("+ ,- ,*, /,^ ")
+a = int(input('a='))
+b = int(input('b='))
+c = int(input('c='))
+D = b**2-4*a*c
+x = input((-b+D**0.5)/2*a)
+y = input((-b-D**0.5)/2*a)
+if z == '+':
+ print(a + b)
+elif z == '-':
+ print(a-b)
+elif z == '*':
+ print (a*b)
+elif z == '/':
+ print (a/b)
+elif z== '^':
+ if D < 0:
+  print('Решений нет')
+else:
+ print(x ,y)
