@@ -1,9 +1,19 @@
 import random
-spisok = [random.randint(1, 1000) for x in range(15)]
-print (spisok)
-summa = sum(spisok)
-print(summa)
-spisok = [random.randint(-1000, -1) for x in range(15)]
-print (spisok)
-summa = sum(spisok)
-print(summa)
+spisok = []
+x =0
+otr = 0
+pol = 0
+while x<15:
+    x = x+1
+    y = random.randint(-1000, 1000)
+    if y == 0:
+        while y == 0:
+            y = random.randint(-1000, 1000)
+    if y <0:
+        otr = otr + y
+    else:
+        pol = pol + y
+    spisok.append(y)
+print('15 случайных чисел:', spisok)
+print('Сумма отрицательных чисел:', otr)
+print('Сумма положительных чисел:', pol)
