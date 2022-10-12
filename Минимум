@@ -1,0 +1,9 @@
+def min(a, b):
+    if a < b:
+        return a
+    else:
+        return b
+def min3(a, b, c):
+    return min(min(a, b), c)
+
+print(min3(45, 8888, 5664))
