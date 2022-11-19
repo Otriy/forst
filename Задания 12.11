@@ -22,3 +22,16 @@ line[4] = f.readline
 print(line[4])
 f.close()
 
+print("Задание 5")
+a = int(input('Ввод числа = '))
+summa = 0
+for i in range(1,a+1):
+    summa =i+summa
+print('Сумма чисел')
+print(summa)
+
+print("Задание 6")
+b = ["1", "2", "3", "4", "5"]
+print(b)
+for spisok in b[::-1]:
+    print(spisok)
