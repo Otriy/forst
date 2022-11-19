@@ -1,8 +1,8 @@
 print("Задание 1")
 from random import randint
-spisok1 = {randint(1,100) for i in range(15)}
+spisok1 = [randint(1,100) for i in range(15)]
 print(spisok1)
-spisok2 = {randint(1,100) for i in range(15)}
+spisok2 = [randint(1,100) for i in range(15)]
 print(spisok2)
 for a in spisok1:
     if a %2 ==0:
